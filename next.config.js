@@ -2,7 +2,7 @@
 const nextConfig = {
   output: "export",
   reactStrictMode: true,
-  basePath: "/ecommerce-product-page",
+  basePath: "/your-repo-name",
 
   webpack: (cfg) => {
     cfg.module.rules.push({

@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/ecommerce-product-page",
-  assetPrefix: "/ecommerce-product-page/",
   reactStrictMode: true,
 
   webpack: (cfg) => {

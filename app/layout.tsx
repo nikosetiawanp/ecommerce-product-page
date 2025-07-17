@@ -1,8 +1,10 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: 'Next.js on GitHub Pages',
-  description: 'Deploy your static Next.js site to GitHub Pages.',
+  title: "Ecommerce Page",
+  description: "Ecommerce Page Built with Nextjs",
 };
 
 export default function RootLayout({
@@ -12,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="flex flex-col items-center lg:px-12">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

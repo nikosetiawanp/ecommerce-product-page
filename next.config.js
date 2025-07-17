@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-const isGithubPages = process.env.GITHUB_ACTIONS || false;
-
 const nextConfig = {
   output: "export",
-  basePath: isGithubPages ? "/ecommerce-product-page" : "",
-  assetPrefix: isGithubPages ? "/ecommerce-product-page" : "",
+  basePath: "/ecommerce-product-page",
+  assetPrefix: "/ecommerce-product-page/",
   reactStrictMode: true,
 };
 

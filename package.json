@@ -6,7 +6,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export && rm -rf docs && mv out docs",
+    "build": "next build && rm -rf docs && mv .next/static-export docs",
     "start": "next start",
     "lint": "next lint"
   },

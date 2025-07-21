@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import IconCart from "@/public/images/icon-cart.svg";
+
 export default function QuantityAddToCart() {
   return (
     <div className="flex flex-col md:flex-row w-full gap-4">
@@ -27,7 +29,7 @@ export default function QuantityAddToCart() {
         </button>
       </div>
       <button className="button-primary">
-        <img src="/images/icon-cart.svg" alt="icon-cart" />
+        <IconCart fill="#1D2026" width={22} height={20} />
         Add to Cart
       </button>
     </div>

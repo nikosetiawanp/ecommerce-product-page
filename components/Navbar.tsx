@@ -1,3 +1,6 @@
+import Cart from "./Cart";
+import Sidebar from "./Sidebar";
+
 export default function Navbar() {
   const links = ["Men", "Women", "About", "Contact"];
   return (
@@ -6,10 +9,7 @@ export default function Navbar() {
       <div className="flex items-center">
         {/* Menu and logo */}
         <div className="flex items-center lg:items-start gap-4 mr-8 lg:mr-14">
-          <button className="lg:hidden">
-            {/* <IconMenu /> */}
-            <img src="/images/icon-menu.svg" alt="icon-menu" />
-          </button>
+          <Sidebar />
           <img src={"/images/logo.svg"} alt={"logo"} />
         </div>
         {/* Links desktop */}
@@ -24,12 +24,7 @@ export default function Navbar() {
       </div>
       {/* Right side */}
       <div className="flex justify-between items-center gap-6 md:gap-12">
-        <button className="relative flex justify-center items-center w-[40px] h-[40px] p-1 rounded-full hover:cursor-pointer active:bg-black/10">
-          <img src={"/images/icon-cart.svg"} alt={"icon-cart"} />
-          <span className="absolute -top-1 -right-1 bg-orange-500 px-2 py-0.5 text-[10px] font-bold text-white rounded-full">
-            3
-          </span>
-        </button>
+        <Cart />
         <div className="w-[24px] md:w-[50px] h-[24px] md:h-[50px] rounded-full bg-grey-500"></div>
       </div>
     </nav>

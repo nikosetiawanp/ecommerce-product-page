@@ -49,7 +49,7 @@ export default function Home() {
               <data className="text-preset-2 text-grey-950" value="125">
                 $125.00
               </data>
-              <span className="h-fit flex items-center text-preset-3 font-bold text-white bg-grey-950 px-2 rounded-md">
+              <span className="h-fit flex justify-center items-center text-preset-3 font-bold text-white bg-grey-950 px-2 rounded-md">
                 50%
               </span>
             </div>
